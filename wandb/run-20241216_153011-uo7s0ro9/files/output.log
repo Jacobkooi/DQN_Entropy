@@ -1,0 +1,28 @@
+Random seed set as 1
+Number of rewards collected:  513 Initial buffer size:  20088
+Percentage chance of positive reward:  2.553763440860215
+/home/jacobk/PycharmProjects/Entropy_final/.venv/lib/python3.8/site-packages/torch/_inductor/compile_fx.py:150: UserWarning: TensorFloat32 tensor cores for float32 matrix multiplication available but not enabled. Consider setting `torch.set_float32_matmul_precision('high')` for better performance.
+  warnings.warn(
+The AVERAGE REWARD is: -4.460999999999998
+The PERCENTAGE OF SOLVED EPISODES is: 0.0 %
+Iterations 0
+Iteration:  0 Time:  3.587477922439575
+Iterations 500
+Iterations 1000
+Iterations 1500
+Iterations 2000
+Iterations 2500
+Traceback (most recent call last):
+  File "main_reward_finding_basic.py", line 90, in <module>
+    agent.run_agent()
+  File "/home/jacobk/PycharmProjects/Entropy_final/agents/unsupervised_agent_reward_finding_basic.py", line 278, in run_agent
+    self.mlp_learn()
+  File "/home/jacobk/PycharmProjects/Entropy_final/agents/unsupervised_agent_reward_finding_basic.py", line 233, in mlp_learn
+    loss.backward()
+  File "/home/jacobk/PycharmProjects/Entropy_final/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 521, in backward
+    torch.autograd.backward(
+  File "/home/jacobk/PycharmProjects/Entropy_final/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 289, in backward
+    _engine_run_backward(
+  File "/home/jacobk/PycharmProjects/Entropy_final/.venv/lib/python3.8/site-packages/torch/autograd/graph.py", line 769, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

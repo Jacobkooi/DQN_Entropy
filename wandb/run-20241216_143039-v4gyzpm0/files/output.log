@@ -1,0 +1,316 @@
+Random seed set as 1
+Number of rewards collected:  513 Initial buffer size:  20088
+Percentage chance of positive reward:  2.553763440860215
+/home/jacobk/PycharmProjects/Entropy_final/.venv/lib/python3.8/site-packages/torch/_inductor/compile_fx.py:150: UserWarning: TensorFloat32 tensor cores for float32 matrix multiplication available but not enabled. Consider setting `torch.set_float32_matmul_precision('high')` for better performance.
+  warnings.warn(
+The AVERAGE REWARD is: -4.460999999999998
+The PERCENTAGE OF SOLVED EPISODES is: 0.0 %
+Iterations 0
+Iteration:  0 Time:  3.775388479232788
+Iterations 500
+Iterations 1000
+Iterations 1500
+Iterations 2000
+Iterations 2500
+Iterations 3000
+Iterations 3500
+Iterations 4000
+Iterations 4500
+Iterations 5000
+Iteration:  5000 Time:  22.800405025482178
+Iterations 5500
+Iterations 6000
+Iterations 6500
+Iterations 7000
+Iterations 7500
+Iterations 8000
+Iterations 8500
+Iterations 9000
+Iterations 9500
+The AVERAGE REWARD is: -2.9090000000000034
+The PERCENTAGE OF SOLVED EPISODES is: 17.0 %
+Iterations 10000
+Iteration:  10000 Time:  23.718164205551147
+Iterations 10500
+Iterations 11000
+Iterations 11500
+Iterations 12000
+Iterations 12500
+Iterations 13000
+Iterations 13500
+Iterations 14000
+Iterations 14500
+Iterations 15000
+Iteration:  15000 Time:  21.650704860687256
+Iterations 15500
+Iterations 16000
+Iterations 16500
+Iterations 17000
+Iterations 17500
+Iterations 18000
+Iterations 18500
+Iterations 19000
+Iterations 19500
+The AVERAGE REWARD is: -2.8100000000000036
+The PERCENTAGE OF SOLVED EPISODES is: 18.0 %
+Iterations 20000
+Iteration:  20000 Time:  23.634588479995728
+Iterations 20500
+Iterations 21000
+Iterations 21500
+Iterations 22000
+Iterations 22500
+Iterations 23000
+Iterations 23500
+Iterations 24000
+Iterations 24500
+Iterations 25000
+Iteration:  25000 Time:  21.25168204307556
+Iterations 25500
+Iterations 26000
+Iterations 26500
+Iterations 27000
+Iterations 27500
+Iterations 28000
+Iterations 28500
+Iterations 29000
+Iterations 29500
+The AVERAGE REWARD is: -2.5740000000000034
+The PERCENTAGE OF SOLVED EPISODES is: 20.0 %
+Iterations 30000
+Iteration:  30000 Time:  23.11261010169983
+Iterations 30500
+Iterations 31000
+Iterations 31500
+Iterations 32000
+Iterations 32500
+Iterations 33000
+Iterations 33500
+Iterations 34000
+Iterations 34500
+Iterations 35000
+Iteration:  35000 Time:  22.056640625
+Iterations 35500
+Iterations 36000
+Iterations 36500
+Iterations 37000
+Iterations 37500
+Iterations 38000
+Iterations 38500
+Iterations 39000
+Iterations 39500
+The AVERAGE REWARD is: -2.5840000000000027
+The PERCENTAGE OF SOLVED EPISODES is: 20.0 %
+Iterations 40000
+Iteration:  40000 Time:  23.07255744934082
+Iterations 40500
+Iterations 41000
+Iterations 41500
+Iterations 42000
+Iterations 42500
+Iterations 43000
+Iterations 43500
+Iterations 44000
+Iterations 44500
+Iterations 45000
+Iteration:  45000 Time:  21.979212045669556
+Iterations 45500
+Iterations 46000
+Iterations 46500
+Iterations 47000
+Iterations 47500
+Iterations 48000
+Iterations 48500
+Iterations 49000
+Iterations 49500
+The AVERAGE REWARD is: -2.4450000000000034
+The PERCENTAGE OF SOLVED EPISODES is: 24.0 %
+Iterations 50000
+Iteration:  50000 Time:  22.322126150131226
+Iterations 50500
+Iterations 51000
+Iterations 51500
+Iterations 52000
+Iterations 52500
+Iterations 53000
+Iterations 53500
+Iterations 54000
+Iterations 54500
+Iterations 55000
+Iteration:  55000 Time:  21.681431770324707
+Iterations 55500
+Iterations 56000
+Iterations 56500
+Iterations 57000
+Iterations 57500
+Iterations 58000
+Iterations 58500
+Iterations 59000
+Iterations 59500
+The AVERAGE REWARD is: -1.4460000000000013
+The PERCENTAGE OF SOLVED EPISODES is: 40.0 %
+Iterations 60000
+Iteration:  60000 Time:  23.7584228515625
+Iterations 60500
+Iterations 61000
+Iterations 61500
+Iterations 62000
+Iterations 62500
+Iterations 63000
+Iterations 63500
+Iterations 64000
+Iterations 64500
+Iterations 65000
+Iteration:  65000 Time:  22.010091543197632
+Iterations 65500
+Iterations 66000
+Iterations 66500
+Iterations 67000
+Iterations 67500
+Iterations 68000
+Iterations 68500
+Iterations 69000
+Iterations 69500
+The AVERAGE REWARD is: -1.3350000000000006
+The PERCENTAGE OF SOLVED EPISODES is: 42.0 %
+Iterations 70000
+Iteration:  70000 Time:  24.706065893173218
+Iterations 70500
+Iterations 71000
+Iterations 71500
+Iterations 72000
+Iterations 72500
+Iterations 73000
+Iterations 73500
+Iterations 74000
+Iterations 74500
+Iterations 75000
+Iteration:  75000 Time:  21.883548259735107
+Iterations 75500
+Iterations 76000
+Iterations 76500
+Iterations 77000
+Iterations 77500
+Iterations 78000
+Iterations 78500
+Iterations 79000
+Iterations 79500
+The AVERAGE REWARD is: -1.2520000000000004
+The PERCENTAGE OF SOLVED EPISODES is: 44.0 %
+Iterations 80000
+Iteration:  80000 Time:  23.476837635040283
+Iterations 80500
+Iterations 81000
+Iterations 81500
+Iterations 82000
+Iterations 82500
+Iterations 83000
+Iterations 83500
+Iterations 84000
+Iterations 84500
+Iterations 85000
+Iteration:  85000 Time:  22.1428484916687
+Iterations 85500
+Iterations 86000
+Iterations 86500
+Iterations 87000
+Iterations 87500
+Iterations 88000
+Iterations 88500
+Iterations 89000
+Iterations 89500
+The AVERAGE REWARD is: -0.16300000000000062
+The PERCENTAGE OF SOLVED EPISODES is: 62.0 %
+Iterations 90000
+Iteration:  90000 Time:  24.183709859848022
+Iterations 90500
+Iterations 91000
+Iterations 91500
+Iterations 92000
+Iterations 92500
+Iterations 93000
+Iterations 93500
+Iterations 94000
+Iterations 94500
+Iterations 95000
+Iteration:  95000 Time:  21.3010196685791
+Iterations 95500
+Iterations 96000
+Iterations 96500
+Iterations 97000
+Iterations 97500
+Iterations 98000
+Iterations 98500
+Iterations 99000
+Iterations 99500
+The AVERAGE REWARD is: -0.8720000000000008
+The PERCENTAGE OF SOLVED EPISODES is: 52.0 %
+Iterations 100000
+Iteration:  100000 Time:  23.585930824279785
+Iterations 100500
+Iterations 101000
+Iterations 101500
+Iterations 102000
+Iterations 102500
+Iterations 103000
+Iterations 103500
+Iterations 104000
+Iterations 104500
+Iterations 105000
+Iteration:  105000 Time:  21.6717746257782
+Iterations 105500
+Iterations 106000
+Iterations 106500
+Iterations 107000
+Iterations 107500
+Iterations 108000
+Iterations 108500
+Iterations 109000
+Iterations 109500
+The AVERAGE REWARD is: -0.5790000000000008
+The PERCENTAGE OF SOLVED EPISODES is: 54.0 %
+Iterations 110000
+Iteration:  110000 Time:  22.962035417556763
+Iterations 110500
+Iterations 111000
+Iterations 111500
+Iterations 112000
+Iterations 112500
+Iterations 113000
+Iterations 113500
+Iterations 114000
+Iterations 114500
+Iterations 115000
+Iteration:  115000 Time:  21.62401556968689
+Iterations 115500
+Iterations 116000
+Iterations 116500
+Iterations 117000
+Iterations 117500
+Iterations 118000
+Iterations 118500
+Iterations 119000
+Iterations 119500
+The AVERAGE REWARD is: -0.5240000000000011
+The PERCENTAGE OF SOLVED EPISODES is: 56.99999999999999 %
+Iterations 120000
+Iteration:  120000 Time:  23.722567319869995
+Iterations 120500
+Iterations 121000
+Iterations 121500
+Iterations 122000
+Iterations 122500
+Traceback (most recent call last):
+  File "main_reward_finding_basic.py", line 90, in <module>
+    agent.run_agent()
+  File "/home/jacobk/PycharmProjects/Entropy_final/agents/unsupervised_agent_reward_finding_basic.py", line 278, in run_agent
+    self.mlp_learn()
+  File "/home/jacobk/PycharmProjects/Entropy_final/agents/unsupervised_agent_reward_finding_basic.py", line 233, in mlp_learn
+    loss.backward()
+  File "/home/jacobk/PycharmProjects/Entropy_final/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 521, in backward
+    torch.autograd.backward(
+  File "/home/jacobk/PycharmProjects/Entropy_final/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 289, in backward
+    _engine_run_backward(
+  File "/home/jacobk/PycharmProjects/Entropy_final/.venv/lib/python3.8/site-packages/torch/autograd/graph.py", line 769, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

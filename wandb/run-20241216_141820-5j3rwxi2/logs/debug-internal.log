@@ -1,0 +1,16 @@
+{"time":"2024-12-16T14:18:20.249839486+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-16T14:18:20.249848211+01:00","level":"INFO","msg":"created symlink","path":"/home/jacobk/PycharmProjects/Entropy_final/wandb/run-20241216_141820-5j3rwxi2/logs/debug-core.log"}
+{"time":"2024-12-16T14:18:20.352772354+01:00","level":"INFO","msg":"created new stream","id":"5j3rwxi2"}
+{"time":"2024-12-16T14:18:20.352791532+01:00","level":"INFO","msg":"stream: started","id":"5j3rwxi2"}
+{"time":"2024-12-16T14:18:20.35285189+01:00","level":"INFO","msg":"handler: started","stream_id":"5j3rwxi2"}
+{"time":"2024-12-16T14:18:20.352868275+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"5j3rwxi2"}
+{"time":"2024-12-16T14:18:20.352868777+01:00","level":"INFO","msg":"sender: started","stream_id":"5j3rwxi2"}
+{"time":"2024-12-16T14:18:20.555825028+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-16T14:18:29.77119564+01:00","level":"INFO","msg":"stream: closing","id":"5j3rwxi2"}
+{"time":"2024-12-16T14:18:29.771217938+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-16T14:18:29.771708939+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-16T14:18:30.311325128+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-16T14:18:30.475631056+01:00","level":"INFO","msg":"handler: closed","stream_id":"5j3rwxi2"}
+{"time":"2024-12-16T14:18:30.47574358+01:00","level":"INFO","msg":"sender: closed","stream_id":"5j3rwxi2"}
+{"time":"2024-12-16T14:18:30.475723703+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"5j3rwxi2"}
+{"time":"2024-12-16T14:18:30.475888245+01:00","level":"INFO","msg":"stream: closed","id":"5j3rwxi2"}

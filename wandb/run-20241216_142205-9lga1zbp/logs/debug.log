@@ -1,0 +1,23 @@
+2024-12-16 14:22:05,898 INFO    MainThread:104076 [wandb_setup.py:_flush():68] Current SDK version is 0.19.1
+2024-12-16 14:22:05,898 INFO    MainThread:104076 [wandb_setup.py:_flush():68] Configure stats pid to 104076
+2024-12-16 14:22:05,898 INFO    MainThread:104076 [wandb_setup.py:_flush():68] Loading settings from /home/jacobk/.config/wandb/settings
+2024-12-16 14:22:05,898 INFO    MainThread:104076 [wandb_setup.py:_flush():68] Loading settings from /home/jacobk/PycharmProjects/Entropy_final/wandb/settings
+2024-12-16 14:22:05,898 INFO    MainThread:104076 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2024-12-16 14:22:05,898 INFO    MainThread:104076 [wandb_init.py:_log_setup():528] Logging user logs to /home/jacobk/PycharmProjects/Entropy_final/wandb/run-20241216_142205-9lga1zbp/logs/debug.log
+2024-12-16 14:22:05,898 INFO    MainThread:104076 [wandb_init.py:_log_setup():529] Logging internal logs to /home/jacobk/PycharmProjects/Entropy_final/wandb/run-20241216_142205-9lga1zbp/logs/debug-internal.log
+2024-12-16 14:22:05,899 INFO    MainThread:104076 [wandb_init.py:init():644] calling init triggers
+2024-12-16 14:22:05,899 INFO    MainThread:104076 [wandb_init.py:init():650] wandb.init called with sweep_config: {}
+config: {'run_description': 'test_fourmaze', 'GPU': '0', 'iterations': 200000, 'latent_dim': 512, 'batch_size': 32, 'eps': 0.1, 'eps_start': 0.1, 'dqn_scaler': 8, 'lr_encoder': 5e-05, 'lr_dqn': 5e-05, 'maze_size': 8, 'format': 'png', 'seed': 1, 'gamma': 0.85, 'tau': 0.02, 'interval_iterations': 10000, 'fill_buffer': 20000, 'map_type': 'random_with_rewards', 'batch_entropy_scaler': 1.0, 'dqn_architecture': 'shallow', 'activation': 'tanh', 'maze_rewards': 3, 'reward_scaler': 1, 'gain': 5, 'subsequent': 1}
+2024-12-16 14:22:05,899 INFO    MainThread:104076 [wandb_init.py:init():680] starting backend
+2024-12-16 14:22:05,899 INFO    MainThread:104076 [wandb_init.py:init():684] sending inform_init request
+2024-12-16 14:22:05,913 INFO    MainThread:104076 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-12-16 14:22:05,913 INFO    MainThread:104076 [wandb_init.py:init():697] backend started and connected
+2024-12-16 14:22:05,915 INFO    MainThread:104076 [wandb_init.py:init():790] updated telemetry
+2024-12-16 14:22:05,915 INFO    MainThread:104076 [wandb_init.py:init():822] communicating run to backend with 90.0 second timeout
+2024-12-16 14:22:08,238 INFO    MainThread:104076 [wandb_init.py:init():874] starting run threads in backend
+2024-12-16 14:22:08,275 INFO    MainThread:104076 [wandb_run.py:_console_start():2374] atexit reg
+2024-12-16 14:22:08,275 INFO    MainThread:104076 [wandb_run.py:_redirect():2224] redirect: wrap_raw
+2024-12-16 14:22:08,275 INFO    MainThread:104076 [wandb_run.py:_redirect():2289] Wrapping output streams.
+2024-12-16 14:22:08,276 INFO    MainThread:104076 [wandb_run.py:_redirect():2314] Redirects installed.
+2024-12-16 14:22:08,277 INFO    MainThread:104076 [wandb_init.py:init():916] run started, returning control to user process
+2024-12-16 14:22:23,467 WARNING MsgRouterThr:104076 [router.py:message_loop():75] message_loop has been closed

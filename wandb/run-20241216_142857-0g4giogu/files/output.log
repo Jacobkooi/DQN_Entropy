@@ -1,0 +1,23 @@
+Random seed set as 1
+Number of rewards collected:  513 Initial buffer size:  20088
+Percentage chance of positive reward:  2.553763440860215
+/home/jacobk/PycharmProjects/Entropy_final/.venv/lib/python3.8/site-packages/torch/_inductor/compile_fx.py:150: UserWarning: TensorFloat32 tensor cores for float32 matrix multiplication available but not enabled. Consider setting `torch.set_float32_matmul_precision('high')` for better performance.
+  warnings.warn(
+The AVERAGE REWARD is: -4.460999999999998
+The PERCENTAGE OF SOLVED EPISODES is: 0.0 %
+Iterations 0
+Iteration:  0 Time:  3.8481292724609375
+Iterations 500
+Iterations 1000
+Iterations 1500
+Iterations 2000
+Iterations 2500
+Iterations 3000
+Traceback (most recent call last):
+  File "main_reward_finding_basic.py", line 90, in <module>
+    agent.run_agent()
+  File "/home/jacobk/PycharmProjects/Entropy_final/agents/unsupervised_agent_reward_finding_basic.py", line 262, in run_agent
+    latent, _ = self.encoder(torch.as_tensor(state).unsqueeze(0).float().to(self.device))
+  File "/home/jacobk/PycharmProjects/Entropy_final/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+KeyboardInterrupt
