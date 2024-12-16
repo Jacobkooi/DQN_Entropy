@@ -1,7 +1,0 @@
-Random seed set as 1
-Traceback (most recent call last):
-  File "main_reward_finding_basic.py", line 70, in <module>
-    agent = Agent_Reward_Finding_Basic(env, eval_env, args=args)
-  File "/home/jacobk/PycharmProjects/Entropy_final/agents/unsupervised_agent_reward_finding_basic.py", line 96, in __init__
-    self.ddqn_loss = torch.jit.trace(self.compute_DDQN_Loss,
-AttributeError: 'Agent_Reward_Finding_Basic' object has no attribute 'compute_DDQN_Loss'

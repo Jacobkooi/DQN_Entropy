@@ -1,9 +1,0 @@
-Random seed set as 1
-Traceback (most recent call last):
-  File "main_reward_finding_basic.py", line 70, in <module>
-    agent = Agent_Reward_Finding_Basic(env, eval_env, args=args)
-  File "/home/jacobk/PycharmProjects/Entropy_final/agents/unsupervised_agent_reward_finding_basic.py", line 24, in __init__
-    self.buffer = ReplayBuffer(env.observe()[0].shape, env.action_space.shape[0], args.fill_buffer + args.iterations + 50000, self.device)
-  File "/home/jacobk/PycharmProjects/Entropy_final/replaybuffer.py", line 15, in __init__
-    self.obses = np.empty((self.capacity, self.obs_shape[0], self.obs_shape[1], self.obs_shape[2]), dtype=np.float32)
-IndexError: tuple index out of range
