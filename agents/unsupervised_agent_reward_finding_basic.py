@@ -9,7 +9,6 @@ import random as r
 import wandb
 import matplotlib.pyplot as plt
 import torch.nn as nn
-import socket
 import os
 
 
@@ -34,9 +33,6 @@ class Agent_Reward_Finding_Basic:
         self.eval_env = eval_env
         self.activation = args.activation
         self.gain = args.gain
-        self.hostname = socket.gethostname()
-
-        # Gather every state in every environment, for plotting purposes
         self.maze_size = env._size_maze
         self.higher_dim_obs = env._higher_dim_obs
         self.latent_dim = args.latent_dim
@@ -47,9 +43,7 @@ class Agent_Reward_Finding_Basic:
         self.gamma = args.gamma
         self.reward_scaler = args.reward_scaler
         self.map_type = args.map_type
-
         self.batch_entropy_scaler = args.batch_entropy_scaler
-        self.dqn_architecture = args.dqn_architecture
         self.subsequent = args.subsequent
 
         self.lr = args.lr_encoder
@@ -135,22 +129,18 @@ class Agent_Reward_Finding_Basic:
         # One-hot action encodings
         if self.onehot:
             ACTION = F.one_hot(ACTION.squeeze(1).long(), num_classes=self.action_dim)
-
         # Current latents (Z_t)
         full_latent, pre_activation = self.encoder(STATE)
-        # Find dying relu activations and create a loss that makes them slightly above 0
-
         # Next latents (Z_t+1)
         next_latent, next_pre_activation = self.encoder(NEXT_STATE)
 
         Q = self.dqn(full_latent)
-        # next_Q = self.dqn(next_latent)
         target_Q = self.target_dqn(next_latent)
         q_loss = self.dqn_loss(Q, target_Q, ACTION, REWARD*self.reward_scaler, DONE)
         loss = q_loss
 
         # Plot the latents
-        if self.iterations % 10000 == 0 and self.hostname == 'jacobk-Legion-7-16ITHg6':
+        if self.iterations % 10000 == 0:
             for j in range(9):
                 plt.subplot(3, 3, j + 1)
                 for i in range(self.batch_size):
@@ -212,8 +202,6 @@ class Agent_Reward_Finding_Basic:
         if self.iterations % 1000 == 0:
             with torch.no_grad():
                 mean_q_value = torch.mean(Q)
-                # calculate mean and std of all the network weights
-
                 # calculate mean of latent state, so 1 single mean and 1 single std over both batch dimension and neuron dimension.
                 mean_latent = torch.mean(full_latent)
                 std_latent = torch.std(full_latent)
@@ -325,17 +313,9 @@ class Agent_Reward_Finding_Basic:
         actions = torch.argmax(actions, dim=1).unsqueeze(1)
         # Current timestep Q-values with the actions from the minibatch
         Q = Q.gather(1, actions)
-
-        # In DQN, we directly use the target network to evaluate the Q-value of the next state
-        # for the action that maximizes the Q-value according to the target network itself.
-        # Note: The difference here is we're using next_Q instead of target_Q to select the action.
-        # However, since it's DQN, we should be using target_Q directly for consistency with the DQN algorithm.
-        # The correct approach would be to use target_Q for both selecting and evaluating the action's Q-value.
         max_next_Q_values = target_Q.max(1)[0].unsqueeze(1)
-
         # Compute the target Q-value
         Q_target = rewards + (1 - dones.int()) * self.gamma * max_next_Q_values
-
         # Calculate the loss
         loss = F.mse_loss(Q, Q_target.detach())
 
@@ -345,8 +325,6 @@ class Agent_Reward_Finding_Basic:
 
         latent_rolled = torch.roll(latent, 1, dims=0)
         difference_states = latent - latent_rolled
-
-        # normal random states loss
         loss = torch.exp(-self.batch_entropy_scaler * torch.norm(difference_states, dim=1, p=2)).mean()
 
         return loss
@@ -354,8 +332,6 @@ class Agent_Reward_Finding_Basic:
     def compute_entropy_loss_subs(self, latent, next_latent):
 
         difference_states = latent - next_latent
-
-        # normal random states loss
         loss = torch.exp(-self.batch_entropy_scaler * torch.norm(difference_states, dim=1, p=2)).mean()
 
         return loss

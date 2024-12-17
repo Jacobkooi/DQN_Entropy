@@ -41,7 +41,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     wandb.init(
-        project="Contrastive_DDQN",
+        project="wandb_project",
             config=vars(args),
         )
 
@@ -68,7 +68,6 @@ eval_env.create_map()
 
 # Create the agent
 agent = Agent_Reward_Finding_Basic(env, eval_env, args=args)
-
 fill_buffer(agent.buffer, args.fill_buffer, env)
 
 number_of_succesfull_episodes = np.where(np.array(agent.buffer.rewards) == 1)[0].shape[0]
@@ -76,9 +75,6 @@ percentage_chance_of_success = (number_of_succesfull_episodes / len(agent.buffer
 print("Number of rewards collected: ", number_of_succesfull_episodes, "Initial buffer size: ", len(agent.buffer))
 print("Percentage chance of positive reward: ", percentage_chance_of_success)
 
-# visualize_buffer_batch(agent)
-
-# Make the directory specific for this environment and set of hyperparameters
 iterations = []
 rewards = []
 
