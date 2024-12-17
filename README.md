@@ -2,15 +2,10 @@
 
 This repository contains the research work on **"Analyzing Latent Entropy in Deep Q-Learning"**, as presented in the SSCI 2025 publication.
 
-## Abstract
-
-Deep Q-Learning relies heavily on neural networks to estimate optimal policies. However, issues like representation saturation or contraction in the final hidden layer can hinder optimization and convergence. This study explores the role of latent representation entropy in deep Q-learning, proposes entropy-enhancing techniques, and evaluates their effects on learning efficiency and performance.
-
-
 ## Repository Contents
 
-- **Code:** Implementation of the entropy-enhancing methods and the Deep Q-Network architecture.
-- **Experiments:** Scripts and configurations for reproducing the maze and Atari environment experiments.
+- **Code:** Implementation of the entropy-enhancing methods using the Deep Q-Network architecture.
+- **Experiments:** Scripts and configurations for reproducing the maze experiments.
 
 ## How to Use
 
@@ -60,7 +55,7 @@ If you find this work useful, please consider citing:
 @inproceedings{kooi2025latententropy,
   title={Analyzing Latent Entropy in Deep Q-Learning},
   author={Kooi, Jacob E. and Hoogendoorn, Mark and François-Lavet, Vincent},
-  booktitle={SSCI 2025},
+  booktitle={Symposium Series on Computational Intelligence},
   year={2025}
 }
 ```
