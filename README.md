@@ -25,11 +25,11 @@ This repository contains the research work on **"Analyzing Latent Entropy in Dee
 3. Run experiments:
 
    ```bash
-   python main_reward_finding_basic.py   ## Baseline
-   python main_reward_finding_basic.py --batch_entropy_scaler=1 --subsequent=1 ## Pair-wise distance maximization
-   python main_reward_finding_basic.py --activation='layernorm' ## Layer normalization
-   python main_reward_finding_basic.py --activation='layernorm' --batch_entropy_scaler=1 --subsequent=1 ## Layer normalization + Pair-wise distance maximization
-   python main_reward_finding_basic.py --activation='tanh+initialization' ## Tanh activation + Xavier initialization (gain 5)
+   python main.py   ## Baseline
+   python main.py --batch_entropy_scaler=1 --subsequent=1 ## Pair-wise distance maximization
+   python main.py --activation='layernorm' ## Layer normalization
+   python main.py --activation='layernorm' --batch_entropy_scaler=1 --subsequent=1 ## Layer normalization + Pair-wise distance maximization
+   python main.py --activation='tanh+initialization' ## Tanh activation + Xavier initialization (gain 5)
    ```
    
 Note that running these experiments automatically creates the representation visualization in a newly created \images directory.

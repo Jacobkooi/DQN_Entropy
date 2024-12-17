@@ -1,7 +1,7 @@
 # Python script by Jacob Kooi
 import os
 from environments.maze_env import Maze
-from agents.unsupervised_agent_reward_finding_basic import Agent_Reward_Finding_Basic
+from agents.dqn_maze_agent import Agent_Reward_Finding_Basic
 from utils import fill_buffer, set_seed
 import numpy as np
 import time
